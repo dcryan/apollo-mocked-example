@@ -1,6 +1,6 @@
-# apollo-mocked-
+# apollo-mocked-example
 
-## STart Server
+## Start Server
 ```
 cd server
 yarn
