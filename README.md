@@ -55,6 +55,7 @@ Here's the output of both.
 You can run the [Apollo Devtools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm) and build a query with a graphiql interface.
 
 
+![Apollo Devtools](apollo-devtools.png)
 
 
 
