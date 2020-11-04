@@ -50,3 +50,11 @@ Here's the output of both.
   "networkStatus": 7
 }
 ```
+
+### Dev Tools
+You can run the [Apollo Devtools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm) and build a query with a graphiql interface.
+
+
+
+
+
