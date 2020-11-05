@@ -15,7 +15,7 @@ yarn start
 ```
 
 ## How to test
-When you run the Client, it requests 2 queries. One query is the normal request to compare against, and the second query is the mocked request.
+When you run the Client, it requests two queries. One query is the normal request to compare against, and the second query is the mocked request.
 
 Here's the output of both.
 
