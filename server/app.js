@@ -19,13 +19,20 @@ const books = [
 
 // The GraphQL schema in string form
 const typeDefs = `
-  type Query { books: [Book] }
+  type Query { books(id: Int): [Book] }
   type Book { title: String, author: String }
 `;
 
 // The resolvers
 const resolvers = {
-  Query: { books: () => books },
+  Query: {
+    books: (parent, args, context, info) => {
+      if (args.id) {
+        return books.filter((book, index) => index === args.id);
+      }
+      return books;
+    }
+  },
 };
 
 // Put together a schema

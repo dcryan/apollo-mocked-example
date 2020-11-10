@@ -4,15 +4,15 @@ import './App.css';
 import { gql, useQuery } from '@apollo/client';
 
 export const GET_BOOKS = gql`
-  query GetBooks {
-    books {
+  query GetBooks($id: Int) {
+    books(id: $id) {
       title
     }
   }
 `;
 
 function App() {
-  const { loading, error, data } = useQuery(GET_BOOKS);
+  const { loading, data } = useQuery(GET_BOOKS, { variables: { id: 0 } });
   console.log('loading', loading);
   console.log('data', data);
 

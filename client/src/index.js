@@ -17,6 +17,9 @@ const mocks = [
   {
     request: {
       query: GET_BOOKS,
+      variables: {
+        id: 1,
+      },
     },
     result: {
       data: {
@@ -29,6 +32,7 @@ const mocks = [
           {
             title: 'test2',
             author: 'Author2',
+            __typename: "test"
           },
         ],
       },
